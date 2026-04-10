@@ -7,7 +7,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 const shopRoutes = require('./routes/shop');
 const adminRoutes = require('./routes/admin');
 
-
+// Middleware
 app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use('/admin', adminRoutes);
